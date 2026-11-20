@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ФЭЙК БЛОНД МУД</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновый слой для размытия -->
+    <div id="bg-blur"></div>
+
+    <!-- Главное меню -->
+    <div id="screen-menu" class="screen active">
+        <div class="menu-content">
+            <h1 class="glow-text">ФЭЙК БЛОНД МУД</h1>
+            <button id="btn-start" class="btn-primary">НАЧАТЬ</button>
+            <button id="btn-music" class="btn-icon" title="Включить/Выключить музыку">
+                <span id="music-icon">🎵</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Выбор персонажа -->
+    <div id="screen-select" class="screen">
+        <div class="char-container">
+            <div class="char-slot" id="char-tesla">
+                <div class="char-label">ТЕСЛА</div>
+                <div class="select-indicator"></div>
+            </div>
+            <div class="char-slot locked" id="char-locked1">
+                <div class="char-label">LOCKED</div>
+            </div>
+            <div class="char-slot locked" id="char-locked2">
+                <div class="char-label">LOCKED</div>
+            </div>
+        </div>
+        <div id="notification">Недоступно</div>
+    </div>
+
+    <!-- Игровой экран (Диалог) -->
+    <div id="screen-game" class="screen">
+        <div id="game-bg"></div>
+        
+        <div id="dialogue-box">
+            <div id="speaker-name">Тесла</div>
+            <div id="dialogue-text"></div>
+            <button id="btn-next" class="btn-next">ДАЛЕЕ</button>
+        </div>
+    </div>
+
+    <!-- Финальная сцена -->
+    <div id="screen-finale" class="screen">
+        <div id="finale-bg"></div>
+        <div id="finale-content">
+            <h2 id="dramatic-text" class="hidden">СУДЬБА НАПРАВИТ<br>В ПОСЛЕДНИЙ БОЙ 🤬🔥👿</h2>
+            <div id="player-line" class="hidden">Не, я лучше в Симач пойду, наXYZ тебя</div>
+        </div>
+        <div id="fade-black"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
